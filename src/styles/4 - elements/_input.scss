@@ -1,0 +1,13 @@
+input {
+  border: 1px solid $off-black;
+  background: transparent;
+  font-size: $baseFontSize;
+  box-shadow: 0;
+  outline: none;
+  font-family: $bodyFont !important;
+
+  &:focus{
+    outline: none;
+  }
+
+  }

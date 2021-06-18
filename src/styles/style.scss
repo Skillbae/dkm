@@ -1,0 +1,127 @@
+// ---------------------------
+// 00 - VENDORS
+
+
+
+// ---------------------------
+// 01 - SETTINGS
+
+
+@import './1 - settings/breakpoints';
+@import './1 - settings/colors';
+@import './1 - settings/sizes';
+@import './1 - settings/typography';
+// @import './1 - settings/zindex';
+
+// ---------------------------
+
+// 02 - TOOLS
+
+@import './2 - tools/mixins';
+
+// ---------------------------
+// 03 - GENERIC
+
+
+// ---------------------------
+// 04 - ELEMENTS
+
+
+
+@import './4 - elements/base';
+// @import './4 - elements/button';
+@import './4 - elements/input';
+// // @import './4 - elements/link';
+// // @import './4 - elements/select';
+// // @import './4 - elements/textarea';
+@import './4 - elements/label';
+
+@import './6 - utils/utils';
+
+// // ---------------------------
+// // 05 - COMPONENTS
+
+
+@import './5 - components/footer';
+@import './5 - components/navigation';
+@import './5 - components/product';
+@import './5 - components/home';
+@import './5 - components/navigation';
+@import './5 - components/sidenavigation';
+
+
+// @import './5 - components/userAvatar';
+
+
+@import './5 - components/productForm';
+@import './5 - components/dropdown';
+@import './5 - components/relatedProducts';
+
+
+@import './5 - components/Home/infoCards';
+@import './5 - components/Home/brandSection';
+@import './5 - components/Home/newsletter';
+
+// // === shop page ===
+@import './5 - components/shop';
+@import './5 - components/Shop/priceFilter';
+@import './5 - components/Shop/colorFilter';
+@import './5 - components/Shop/categoryFilter';
+
+// // @import './5 - components/Shop/brandFilter';
+
+@import './5 - components/basket';
+@import './5 - components/Basket/basketItem';
+@import './5 - components/Basket/basketItemsContainer';
+@import './5 - components/Basket/voucher';
+@import './5 - components/Basket/pricebreakdown';
+
+// // VIEW PRODUCT 
+@import './5 - components/viewProduct';
+@import './5 - components/ViewProduct/productDetails';
+
+
+@import './5 - components/Admin/products';
+@import './5 - components/Admin/productsNavbar';
+@import './5 - components/Admin/productItem';
+@import './5 - components/Admin/productList';
+@import './5 - components/Admin/user';
+@import './5 - components/Admin/dashboard';
+
+
+
+
+
+// // ERROR
+@import './5 - components/Error/notFound';
+
+.navigation Link button{
+  margin: 0 12px;
+}
+
+
+
+body{
+  margin : 0;
+  padding : 0;
+}
+
+.white-modal{
+  background-color: aliceblue;
+  border-radius: 24px;
+  padding: 5rem 5rem;
+  
+}
+
+
+.test{
+  height: 100vh;
+  width: 100vw;
+  background-color: $red;
+  @include flexCenter();
+  h1{
+    @extend .white-modal;
+    @include flexCenter();
+  }
+  
+}

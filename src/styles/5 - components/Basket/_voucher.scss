@@ -1,0 +1,40 @@
+.voucher{
+  // border: 2px solid red;
+  height: 240px;
+  width: 50% ;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  position: relative;
+  margin-top: -22px;
+  
+  h1{
+    // display: none;
+    // position: absolute;
+    background-color: $white;
+    padding-right: 1.6rem;
+    width: fit-content;
+  }
+  div{
+    width: fit-content;
+  }
+  // p{
+  //   margin: 0;
+  // }
+  input{
+    border: 1px solid $border-color;
+    padding:  0.4rem ;
+    width: 70%;
+    margin: 1.6rem 0;
+  }
+}
+
+.voucher-apply-btn{
+  color: $white;
+  background-color: $black;
+  padding: 0.6rem 2.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}

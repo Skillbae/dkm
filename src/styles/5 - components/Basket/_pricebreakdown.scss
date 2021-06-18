@@ -1,0 +1,39 @@
+.pricebreakdown{
+  background-color:  $gray-01 ;
+  height: 240px;
+  width: 50% ;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0rem 4rem;
+  .breakdown{
+    // background-color: yellowgreen;
+    width: 100%;
+    div{
+      border-bottom: 1px solid $border-color;
+      padding: 0.4rem 0;
+      // border: 1px solid #758283;
+      // font-size: $baseFontSize;
+      
+      
+    }
+    .total{
+      border: none;
+      color: $blue;
+      font-weight: 500;
+    }
+  }
+}
+
+.checkout{
+  // padding: 1rem 4rem;
+  background-color: rgb(255, 72, 0);
+  color: $white;
+  width: 50%;
+  height: 48px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 1rem ;
+  justify-self: flex-start;
+}

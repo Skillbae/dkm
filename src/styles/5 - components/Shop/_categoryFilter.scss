@@ -1,0 +1,22 @@
+.categoryFilter{
+  // background-color: lightsteelblue;
+  h2{
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    font-weight: bold;
+  }
+}
+
+.categoryFilter-item{
+  // background-color: tomato;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.74);
+  span {
+    text-transform: capitalize;
+    font-size: $baseFontSize;
+    padding: 0.6rem 0.2rem;
+    cursor: pointer;
+  }
+  &:hover{
+    color: tomato;
+  }
+}

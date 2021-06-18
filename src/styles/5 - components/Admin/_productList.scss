@@ -1,0 +1,30 @@
+
+
+.product-list-header{
+  height: 10vh;
+  background-color: $gray-01;
+  justify-content: space-around;
+  font-weight: 600;
+  @include mobile (){
+    display: none;
+  }
+  .img-placeholder{
+    width: 100px;
+    background-color: black;
+  }
+  
+}
+
+.header-product-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  p{
+    min-width: 120px;
+    max-width: 200px;
+    @include flexCenter();
+  }
+  div{
+    width: 144px;
+  }
+}

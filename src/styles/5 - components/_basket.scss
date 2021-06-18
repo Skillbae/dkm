@@ -1,0 +1,39 @@
+.basket{
+  // height: 500px;
+  // background-color: lightgreen;
+}
+
+.basket-container{
+  width: 80%;
+  margin: 0 auto;
+  // border: 2px solid red;
+}
+
+.basket-header{
+  // border: 2px solid blue;
+  margin: 1rem 0;
+  h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+}
+.basket-empty{
+  @include flexCenter();
+  flex-direction: column;
+  position: relative;
+  div{
+    flex-direction: column;
+    margin: 24px 0;
+    a {
+      background: black;
+      padding: 12px 36px;
+      color: $white;
+      margin-top: 16px;
+    }
+  }
+  img{
+    height: 20vh;
+  }
+  
+}

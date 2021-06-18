@@ -1,0 +1,29 @@
+// .footer{
+//   display: none !important;
+// }
+.viewProduct{
+  // background-color: lightgreen;
+}
+.viewProduct-wrapper{
+  width: 920px;
+  min-height: 50vh;
+  margin: 48px auto;
+  // border: 2px solid red;
+  // background-color: lightsalmon;
+}
+
+.viewProduct-detail-description{
+  margin-top:1rem ;
+  margin-bottom: 4rem;
+  h1{
+    font-weight: bold;
+    // border: 2px dashed red;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid $border-color;
+    text-transform: uppercase;
+  }
+  p{
+    // border: 2px dashed blue;
+    color: $gray-para;
+  }
+}

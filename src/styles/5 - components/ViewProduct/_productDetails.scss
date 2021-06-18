@@ -1,0 +1,122 @@
+.viewProduct-productDetails{
+  display: flex;
+  align-items: flex-start ;
+  margin: 2rem 0;
+  
+}
+.viewProduct-images-wrapper{
+  // min-height: 560px;
+  // border: 2px solid teal;
+  width: 40%;
+  
+}
+.viewProduct-details{
+  // min-height: 470px;
+  // max-height: 560px;
+  width: 60%;
+  // border: 2px solid teal;
+  padding: 0 4rem;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  
+  
+}
+.viewProduct-primaryImg{
+  height: 340px;
+  max-width: 340px;
+  width: 100%;
+  margin-bottom: 30px;
+  // background-color: gray;
+  position: relative;
+  border: 1px solid $border-color;
+  .icons {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+.viewProduct-secondaryImg{
+  height: 100px;
+  width: 100px;
+  border: 1px solid $border-color;
+  // background-color: grey;
+  // margin-right:  3px;
+}
+
+.product-img{
+  height: inherit;
+  width: inherit;
+}
+
+.viewProduct-details{
+  .viewProduct-title{
+    font-weight: 600;
+    text-transform : uppercase;
+  }
+  .viewProduct-description{
+    color: $gray-20;
+  }
+  .viewProduct-price{
+    font-weight: 700;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 0.8rem;
+  }
+  
+}
+
+.viewProduct-colorPicker,
+.viewProduct-sizePicker {
+  margin-bottom: 1rem;
+  color: $gray-10;
+  font-weight: 500;
+  // border: 2px dashed red;
+  p{
+    margin: 4px 0;
+  }
+  .d-flex {
+    width: calc( (2rem * 4)  + 1rem ) ;
+    justify-content: space-between;
+    div{
+      height: 2rem;
+      width: 2rem;
+      background-color: $gray-20;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      color: black;
+    }
+  }
+}
+.viewProduct-quantity{
+  // border: 2px dashed blue;
+  margin: 1rem 0;
+  // display: flex;
+  // align-items: center;
+  p{
+    border: 2px solid  black;
+    // padding: 0 1rem;
+    margin: 0 0.4rem;
+    
+  }
+}
+.viewProduct-add-to-basket-btn{
+  height: 3rem;
+  width: 60%;
+  margin: 1rem 0;
+  background-color: orangered;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.2s ease-in;  
+  span{
+    margin: 0 4px;
+  }
+  &:hover{
+    background-color: white;
+    color: orangered;
+    border: 2px solid orangered;
+  }
+}

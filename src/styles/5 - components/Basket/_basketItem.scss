@@ -1,0 +1,64 @@
+.basket-item{
+  border-bottom: 1px solid $border-color ;
+  height: 160px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1.6rem;
+
+  div{
+    min-width: 60px ;
+    // background-color: lightseagreen;
+    
+  }
+}
+
+.basket-item-img{
+  height: 120px;
+  width: 120px;
+  // background-color: grey !important;
+  // border: 1px solid $border-color;
+  img{
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+    // border: 1px solid $border-color;
+  }
+} 
+.basket-item-description{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 200px;
+  p{
+    margin: 0;
+    text-transform: capitalize;
+  }
+}
+.basket-item-price{
+  span{
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+}
+.basket-item-quantity{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  
+  
+  p{
+    border: 2px solid black;
+    height: 28px;
+    width: 28px;
+    margin: 0 6px;
+    font-weight: bold;
+  }
+}
+
+.basket-item-total{
+ @extend .basket-item-price
+  
+}

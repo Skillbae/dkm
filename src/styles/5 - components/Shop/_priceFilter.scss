@@ -1,0 +1,17 @@
+.priceFilter{
+  max-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // background-color: aquamarine;  
+  h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+  } 
+  p {
+    font-size: $baseFontSize;
+    margin-top: 0.6rem;
+   
+  }
+  
+}

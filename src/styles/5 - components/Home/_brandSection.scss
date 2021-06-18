@@ -1,0 +1,79 @@
+.brand-section-wrapper {
+  width: 100%;
+  background-color: #cad5e2;
+  padding: 5rem 0 4rem 0;
+}
+
+.brand-section {
+  width: 920px;
+  margin: 0 auto;
+  @include mobile() {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.brand-section-header {
+  justify-content: space-between;
+  h1 {
+    margin: 0;
+    font-family: $headingFont;
+  }
+  .brand-section-view-link {
+    color: $paragraph-color;
+    font-size: $baseFontSize;
+    span {
+      margin: 0 4px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.brand-section-content {
+  margin: 0rem auto;
+  margin-top: 2rem;
+  justify-content: space-between;
+  @include mobile() {
+    flex-wrap: wrap;
+    margin: 0rem auto;
+    padding: 1rem;
+  }
+}
+
+.brand-card-wrapper {
+  width: 220px;
+  flex-direction: column;
+  transition: 0.4s all;
+  @include mobile() {
+    width: 140px;
+  }
+  p {
+    font-weight: bold;
+    margin: 18px 0;
+    font-size: $baseFontSize;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.brand-card-img {
+  height: 200px;
+  width: 200px;
+
+  background: grey;
+  border-radius: 18px;
+  box-shadow: 6px 6px 16px #758283;
+  cursor: pointer;
+
+  @include mobile() {
+    height: 130px;
+    width: 130px;
+  }
+  img {
+    height: inherit;
+    width: inherit;
+    object-fit: contain;
+    border-radius: 18px;
+  }
+}

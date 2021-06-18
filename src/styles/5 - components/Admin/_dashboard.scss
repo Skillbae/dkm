@@ -1,0 +1,93 @@
+.admin-dashboard {
+  // background-color: lighten($color: $gray-20, $amount: 10);
+  background-color: $off-white;
+  height: 100%;
+  padding: 1rem;
+  .statistics {
+    display: flex;
+    border: 1px solid $border-color;
+    background-color: $white;
+    // margin: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+    .header{
+      
+      p{
+        font-size: 1.2rem ;
+      }
+    }
+    .d-flex{
+      justify-content: space-between;
+    }
+  }
+  .stats-wrapper {
+    margin: 2rem 0;
+    // border: 2px solid red;
+    
+    // padding: 0.4rem;
+    .stats-icon {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 100%;
+      margin: 0 0.8rem;
+      .icon {
+        font-size: 1.4rem;
+      }
+    }
+    .stats-icon.purple {
+      background-color: lighten($color: $purple, $amount: 42%);
+      .icon {
+        color: $purple;
+      }
+    }
+    .stats-icon.sky-blue {
+      background-color: lighten($color: $sky-blue, $amount: 42%);
+      .icon {
+        color: $sky-blue;
+      }
+    }
+    .stats-icon.red {
+      background-color: lighten($color: $red, $amount: 42%);
+      .icon {
+        color: $red;
+      }
+    }
+    .stats-icon.green {
+      background-color: lighten($color: $green, $amount: 42%);
+
+      .icon {
+        color: $green;
+      }
+    }
+
+    .stats {
+      p {
+        margin: 0;
+        &:nth-child(1) {
+          font-size: 1.4rem;
+        }
+        &:nth-child(2) {
+          color: $gray-para;
+        }
+      }
+    }
+  }
+
+
+  .visits{
+    background-color: $white;
+    border: 1px solid $border-color;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    width: fit-content;
+    h2{
+      margin: 1rem 2rem ;
+    }
+    .visits-chart{
+      margin: 1rem 0;
+      margin-right: 2rem;
+    }
+  }
+
+
+}

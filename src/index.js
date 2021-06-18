@@ -1,12 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// redux
+import { Provider } from 'react-redux';
+import  {store, rrfProps} from './redux/store/store'; 
+import { ReactReduxFirebaseProvider } from "react-redux-firebase"
+
+
+// Style dependencies
+import 'antd/dist/antd.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import "./styles/style.scss"
+
+// firebase
+import firebase from "firebase/app";
+import 'firebase/auth'
+import 'firebase/firestore'
+import 'firebase/storage'
+
+import firebaseConfig from "./services/firebaseConfig";
+firebase.initializeApp(firebaseConfig);
+firebase.firestore();
+// firebase.storage();
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <ReactReduxFirebaseProvider {...rrfProps}>
+        <App />
+      </ReactReduxFirebaseProvider>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

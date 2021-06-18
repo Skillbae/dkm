@@ -1,0 +1,27 @@
+// product
+
+export const ADD_PRODUCT = "ADD_PRODUCT";
+export const GET_PRODUCTS = "GET_PRODUCTS";
+
+
+
+// BASKET 
+export const ADD_TO_BASKET = "ADD_TO_BASKET";
+export const REMOVE_FROM_BASKET = "REMOVE_FROM_BASKET";
+export const CLEAR_BASKET = "CLEAR_BASKET";
+export const INCREASE_QTY_ITEM = "INCREASE_QTY_ITEM";
+export const DECREASE_QTY_ITEM = "DECREASE_QTY_ITEM";
+
+
+
+
+
+// misc
+export const IS_AUTHENTICATING = "IS_AUTHENTICATING";
+export const LOADING = "LOADING";
+export const SET_AUTH_STATUS = "SET_AUTH_STATUS";
+export const SET_REQUEST_STATUS = "SET_REQUEST_STATUS";
+export const FLIP_SIDENAV_STATUS = "FLIP_SIDENAV_STATUS";
+
+
+
